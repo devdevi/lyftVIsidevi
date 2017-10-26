@@ -1,0 +1,316 @@
+*{ 
+	/*outline: 1px solid red;*/
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Montserrat', sans-serif; 
+	margin: 0 auto;
+}
+ 
+
+#navMenu{
+	color:#fff;
+	list-style: none;
+	display: inline-block;
+	width: 100%;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+ 	
+}
+#navMenu li{ 
+	display : inline-block;
+	text-align: center;
+    padding-left: 5%;
+    color:#fff;
+
+}
+.logo{
+	
+	margin-right: 40%;
+}
+#navMenu ul li a{
+	color:white;
+	text-decoration: none;
+}
+#navMenu ul li a:hover{
+
+	color:purple;
+	text-decoration: none;
+}
+.inicio{
+	background-image: url("../assets/images/hero.gif");
+	background-size: cover;
+	padding: 10px 0;
+	height: 700px;/*provisorio debo sacarlo*/	
+}
+
+.gradiente{
+  background: linear-gradient(transparent,#76278f);
+  height: 7rem;
+	position: relative;
+	top: 571px;
+ 
+}
+
+ .texto {
+ 	width: 40%;
+ }
+ /*formulario contacto BOTON ENVIAR*/
+input {
+  outline: 3px solid red;
+  font-weight: 100;
+  padding: 1em;
+  border: 0;
+  width: 80%;
+  color: #bfc7d9;
+  border-bottom: .3px solid #eef;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  padding-right: 0;
+  padding-left: 0;
+}
+.formularioHeader p{
+  color: #352384;
+  letter-spacing: 1.5px;
+ font-weight: 200;
+  margin-top: -1rem;
+}
+
+
+.formularioHeader h6, h5{ 
+  font-weight: 200;
+  letter-spacing: 1.5px;
+    
+}
+.formularioHeader h1{
+	font-size: 45px;
+	font-weight:bold;
+  color:#352384;
+}
+.check a:hover{
+
+}
+.formularioHeader{
+	margin: 10% 0 0% 0; 
+	padding: 30px;
+	width: 43%;
+	float: right;
+	overflow: hidden;
+	background: white;
+	text-align: left;
+}
+/*boton*/
+.view{ /*boton*/
+    text-decoration: none;
+    background:  #ff00bf;
+  	padding: 15px;
+    padding-top:10px;
+    padding-bottom: 10px;
+  	border-radius: 7px;
+  	font-size: 1em;
+    color: #fff;
+    
+}
+.view2{ /*boton*/
+    padding: 15px;
+    border-radius: 7px;
+    font-size: 1em;
+    color:  #728099;
+    
+}
+.view2:hover{ /*boton*/
+    padding: 15px;
+    border-radius: 7px;
+    font-size: 1em;
+    color: #b30086;
+    
+}
+.check a:hover{
+  color:#b30086;
+}
+.formularioHeader h6 {
+  color: #728099;
+
+}
+
+/*boton hover
+.view:hover { 
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 20px;
+  margin-top: 15px;
+  color: #18bc9c;
+  border: solid 2px #18bc9c;
+  text-decoration: none;
+  transition: all ease .6s;*/
+}
+/*SOCIAL MEDIA*/
+
+.socialMedia  {
+  
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    display: inline-block;
+    width: 50px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    color: #fff;
+    background: 0 0;
+    z-index:100 ;
+    transition: all ease .6s;
+}
+.socialMedia:hover {
+	 font-size: 32px;
+    line-height: 45px;
+    text-align: center;
+    display: inline-block;
+    width: 50px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    background: white;
+    z-index: 0;
+    color:#18bc9c;
+    transition: all ease .6s;
+}
+
+   
+
+/* foto  telefono y parrafoseccion uno  */
+.box img {
+	position: relative;
+	left: 80px;
+	width: 86%;
+}
+
+.box {
+  background: linear-gradient(#76278f,#2b1e66);
+  padding: 100px;
+  margin-top:-7px;
+  overflow: hidden;
+}
+
+
+.content {
+	outline: 1px solid green;
+  padding: 40px;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: left;
+  overflow: hidden;   
+}
+
+.left {
+	display: inline-block;
+	float: left;
+  	width: 45%;
+  	
+}
+.right {
+	float: right;
+ 	width: 50%;
+   
+}
+
+/*VIDEOS SECCION 1*/
+.vbox {
+  overflow: hidden;
+}
+
+
+.vcontent {
+	outline: 8px solid green; 
+}
+
+.vleft {/*VIDEO*/
+	float: right;
+  	
+}
+.vright {
+ 	width: 30%;
+  	padding:30px; 
+  }
+/*boton Download*/
+.vdbox {
+  overflow: hidden;
+  
+}
+
+.vdcontent {
+	outline: 8px solid green; 
+
+}
+
+.vdleft {
+	display: inline-block;
+	float: left;
+  	width: 70%;
+}
+.vdright {
+	position: relative;
+	float: right;
+ 	width: 25%;
+  }
+
+ /*FOOTER*/
+ footer{
+ 	text-align: center;
+ 	background:#333447;
+ 	color:white;
+ }
+ .primary{
+  overflow: hidden;
+    padding: 40px;
+
+}
+
+.fcontent {
+outline: 8px solid green;
+  line-height: 30px;
+  overflow: hidden;
+  padding: 20px;  
+
+}
+.drive{
+	display: inline-block;
+	float: left;
+  	width: 20%;
+  	padding: 20px;  
+}
+.partner {
+	display: inline-block;
+	float: left;
+  	width: 20%;
+  	padding: 20px;  
+}
+.learn{
+	display: inline-block;
+	float: left;
+  	width: 20%;
+  	padding: 20px;  
+}
+.socialMedia{
+	position: relative;
+	float: right;
+ 	width: 40%;
+  	padding:30px; 
+  	padding: 20px;  
+  }
+iframe{
+	margin-bottom: 0,
+	padding:0;
+}
+
+.socialMedia img{
+	margin:50px;
+	display: block;
+ 	width:135px;
+ 	 height:40px;
+ }
+ .fcontent li{
+ 	text-decoration: none;
+ }
