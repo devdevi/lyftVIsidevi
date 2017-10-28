@@ -211,6 +211,7 @@ input {
 .vdright {
   float: right;
   width: 25%;
+  padding-top:20px;
   padding-right: 40px;
 }
 /*FOOTER*/
