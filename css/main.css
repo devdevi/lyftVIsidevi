@@ -6,311 +6,307 @@ body{
 	font-family: 'Montserrat', sans-serif; 
 	margin: 0 auto;
 }
- 
-
+/*BARA DE NAVEGACION - header*/
 #navMenu{
-	color:#fff;
-	list-style: none;
-	display: inline-block;
-	width: 100%;
-    z-index: 9;
     position: fixed;
     top: 0;
-    z-index: 2;
- 	
+    width: 100%;
+    overflow: hidden;
+    z-index: 100;
 }
-#navMenu li{ 
-	display : inline-block;
-	text-align: center;
-    padding-left: 5%;
-    color:#fff;
-
-}
-.logo{
-	
-	margin-right: 40%;
-}
-#navMenu ul li a{
-	color:white;
-	text-decoration: none;
-}
-#navMenu ul li a:hover{
-
-	color:purple;
-	text-decoration: none;
-}
+/*FONDO HEADER*/
 .inicio{
-	background-image: url("../assets/images/hero.gif");
-	background-size: cover;
-	padding: 10px 0;
-	height: 700px;/*provisorio debo sacarlo*/	
+  background-image: url("../assets/images/hero.gif");
+  background-size: cover;
+  height: 700px;/*provisorio debo sacarlo*/ 
 }
+/*logo*/
 
-.gradiente{
-  background: linear-gradient(transparent,#76278f);
-  height: 7rem;
-	position: relative;
-	top: 571px;
- 
-}
-
- .texto {
- 	width: 40%;
- }
- /*formulario contacto BOTON ENVIAR*/
-input {
-  outline: 3px solid red;
-  font-weight: 100;
-  padding: 1em;
-  border: 0;
-  width: 80%;
-  color: #bfc7d9;
-  border-bottom: .3px solid #eef;
-  text-align: left;
+#logoimg{
+  width: 6%;
   position: relative;
-  z-index: 1;
-  padding-right: 0;
-  padding-left: 0;
+  top: 70px;
+  left: 80px;
 }
+/*menu de NAVEGACION*/
+#navMenu ul{
+  margin:0;
+  padding:0;
+}
+#navMenu li:first-child{
+  margin-left: 60%;
+}
+
+#navMenu li{ 
+  display : inline-block;
+  text-align: center;
+  margin:20px;
+  margin-top: 30px;
+  font-size: 20px;
+  color:#fff;
+}
+#navMenu li:last-child {
+  border: .1em solid white;
+  border-radius: .5em;
+  padding: 10px;
+}
+#navMenu li a:hover{
+
+	color: #FF00BF;
+}
+ /*formulario contacto BOTON ENVIAR*/
+.formularioHeader{
+  margin: 12% 0 0% 0; 
+  padding: 30px;
+  width: 43%;
+  float: right;
+  overflow: hidden;
+  background: white;
+}
+input {
+    padding: 1em 0 1em 0;
+    border: 0;
+    width: 80%;
+    color: #bfc7d9;
+    border-bottom: .1px solid  gray;
+}
+#phone{
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 200;
+}
+/*TEXTOS Y TITULOS*/
 .formularioHeader p{
   color: #352384;
   letter-spacing: 1.5px;
- font-weight: 200;
-  margin-top: -1rem;
-}
-
-
-.formularioHeader h6, h5{ 
   font-weight: 200;
-  letter-spacing: 1.5px;
-    
-}
+  margin-top: -1rem;
+}   
 .formularioHeader h1{
 	font-size: 45px;
-	font-weight:bold;
   color:#352384;
 }
+.check a{
+  color:#b30086;
+}
 .check a:hover{
-
+  color:#ff00bf;
 }
-.formularioHeader{
-	margin: 10% 0 0% 0; 
-	padding: 30px;
-	width: 43%;
-	float: right;
-	overflow: hidden;
-	background: white;
-	text-align: left;
+.formularioHeader h6 {
+  color: #728099;
 }
-/*boton*/
-.view{ /*boton*/
-    text-decoration: none;
+.formularioHeader h6, h5{ 
+  font-weight: 200;
+  letter-spacing: 1px;    
+}
+/*BOTONES*/
+.view{ /*boton ROSA*/
     background:  #ff00bf;
   	padding: 15px;
     padding-top:10px;
     padding-bottom: 10px;
   	border-radius: 7px;
   	font-size: 1em;
-    color: #fff;
-    
+    color: #fff;   
 }
 .view2{ /*boton*/
+    text-decoration: underline;
     padding: 15px;
     border-radius: 7px;
     font-size: 1em;
-    color:  #728099;
-    
+    color:  #728099;    
 }
 .view2:hover{ /*boton*/
     padding: 15px;
     border-radius: 7px;
     font-size: 1em;
-    color: #b30086;
-    
+    color: #b30086;   
 }
-.check a:hover{
-  color:#b30086;
+.gradiente{ /*GRADIENTE HEADER*/
+  background: linear-gradient(transparent,#76278f);
+  height: 7rem;
+  position: relative;
+  top: 581px;
 }
-.formularioHeader h6 {
-  color: #728099;
-
-}
-
-/*boton hover
-.view:hover { 
-  padding: 15px;
-  border-radius: 5px;
-  background-color: #fff;
-  font-size: 20px;
-  margin-top: 15px;
-  color: #18bc9c;
-  border: solid 2px #18bc9c;
-  text-decoration: none;
-  transition: all ease .6s;*/
-}
-/*SOCIAL MEDIA*/
-
-.socialMedia  {
-  
-    font-size: 30px;
-    line-height: 45px;
-    text-align: center;
-    display: inline-block;
-    width: 50px;
-    border: 2px solid #fff;
-    border-radius: 100%;
-    color: #fff;
-    background: 0 0;
-    z-index:100 ;
-    transition: all ease .6s;
-}
-.socialMedia:hover {
-	 font-size: 32px;
-    line-height: 45px;
-    text-align: center;
-    display: inline-block;
-    width: 50px;
-    border: 2px solid #fff;
-    border-radius: 100%;
-    background: white;
-    z-index: 0;
-    color:#18bc9c;
-    transition: all ease .6s;
-}
-
-   
-
+/*FIN DE HEADER*/
+/*INICIO SECCIONES*/
+/*SECCION 1*/
 /* foto  telefono y parrafoseccion uno  */
-.box img {
-	position: relative;
-	left: 80px;
-	width: 86%;
-}
 
 .box {
   background: linear-gradient(#76278f,#2b1e66);
-  padding: 100px;
+  padding: 5px 100px;
+  color:white;
   margin-top:-7px;
   overflow: hidden;
 }
-
-
+.box h1{
+  font-weight:600;
+  font-size: 30px;
+  line-height: 50px;
+  font-stretch: 70px;
+  letter-spacing: 2px;
+}
 .content {
-	outline: 1px solid green;
   padding: 40px;
-  font-size: 15px;
   line-height: 30px;
   text-align: left;
   overflow: hidden;   
 }
-
+.box img {
+  position: relative;
+  left: 0px;
+  width: 110%;
+}
 .left {
-	display: inline-block;
-	float: left;
-  	width: 45%;
-  	
+  display: inline-block;
+  float: left;
+  width: 50%;  
 }
 .right {
-	float: right;
- 	width: 50%;
-   
+  float: right;
+  width: 50%;  
 }
-
+/*SECCION VIDEOS*/
+/* video1 */
 /*VIDEOS SECCION 1*/
-.vbox {
+.vbox,.vdbox  {
   overflow: hidden;
 }
-
-
-.vcontent {
-	outline: 8px solid green; 
+.vbox h1, .vdbox h1{
+  font-size: 28px;
+  letter-spacing: 1px;
+  padding:0;
+  margin-top: 2%;
+  margin-bottom: 5%;
 }
-
+.vbox a, .vdbox a{
+  color: #ff00bf;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.vbox p,.vdbox p{
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #333447;
+}
+.vcontent {
+  margin-bottom: -4px;
+}
 .vleft {/*VIDEO*/
-	float: right;
-  	
+  float: right;    
 }
 .vright {
- 	width: 30%;
-  	padding:30px; 
-  }
-/*boton Download*/
-.vdbox {
-  overflow: hidden;
-  
+  width: 30%;
+  padding:30px; 
 }
-
-.vdcontent {
-	outline: 8px solid green; 
-
-}
-
 .vdleft {
-	display: inline-block;
-	float: left;
-  	width: 70%;
+  display: inline-block;
+  float: left;
+  width: 70%;
 }
 .vdright {
-	position: relative;
-	float: right;
- 	width: 25%;
-  }
-
- /*FOOTER*/
+  float: right;
+  width: 25%;
+  padding-right: 40px;
+}
+/*FOOTER*/
  footer{
- 	text-align: center;
- 	background:#333447;
- 	color:white;
+  font-size: 16px;
+  text-align: center;
+  background:#333447;
+ 	color:#f3f3f5;
  }
- .primary{
-  overflow: hidden;
-    padding: 40px;
-
-}
-
-.fcontent {
-outline: 8px solid green;
-  line-height: 30px;
-  overflow: hidden;
-  padding: 20px;  
-
-}
+ /*seccion dividida en 4 caja para hacer mas facil el manejo de contenido*/
 .drive{
-	display: inline-block;
-	float: left;
-  	width: 20%;
-  	padding: 20px;  
+   width: 20%;
+  float: left;
+  padding: 20px;  
 }
 .partner {
-	display: inline-block;
-	float: left;
-  	width: 20%;
-  	padding: 20px;  
+  float: left;
+  width: 20%;
+  padding: 20px;  
 }
 .learn{
-	display: inline-block;
-	float: left;
-  	width: 20%;
-  	padding: 20px;  
+  float: left;
+  width: 20%;
+  padding: 20px;  
 }
-.socialMedia{
-	position: relative;
-	float: right;
- 	width: 40%;
-  	padding:30px; 
-  	padding: 20px;  
-  }
+
+.sociallogos img{
+  margin:50px;
+  display: block;
+  width:135px;
+  height:40px;
+}
+/* cierre cajas*/
+
+.primary li {
+  list-style: none;
+  margin:0;
+  padding: 0;
+  color:#f3f3f5;
+}
+.fcontent ul, a{
+  text-align: left;
+  text-decoration: none;
+  color:#f3f3f5;
+}
+.fcontent a:hover{
+  color: #ff00bf;
+  text-decoration: underline;
+}
+.fcontent h4{
+  padding:3%;
+  margin:0;
+  font-weight: 700;
+  font-size: 16px;
+}
+.fcontent h4:hover  {
+  text-decoration: underline;
+}
+.fcontent a{
+ font-size: 14px;
+}
+.fcontent  h4:hover{
+  color:white;
+  text-decoration-color: #ff00bf;
+}
+.fcontent {
+  /*outline: 8px solid green;*/
+  line-height: 30px;
+  overflow: hidden;
+}
 iframe{
 	margin-bottom: 0,
 	padding:0;
 }
-
-.socialMedia img{
-	margin:50px;
-	display: block;
- 	width:135px;
- 	 height:40px;
+.redes ul{
+  display: inline-block;
+  margin-right:26%; 
  }
- .fcontent li{
- 	text-decoration: none;
+.redes li{
+  display: inline-block;
  }
+ hr{
+  width: 50%;
+}
+ /*SOCIAL MEDIA*/
+.socialM {
+  font-size: 14px;
+    padding:9px;
+    margin: 40px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 100%;
+  }
+#lastFooter{
+  margin:10px;
+  padding:10px;
+}
+}
